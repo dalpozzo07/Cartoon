@@ -26,3 +26,9 @@
     width: 16px;
     height: 16px;
 }
+
+.search input {
+    border: none;
+    outline: none;
+    background: transparent;
+}
