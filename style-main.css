@@ -17,7 +17,7 @@
 
     background: #ddd;
     border-radius: 20px;
-    padding: 1px 10px;
+    padding: 4px 10px;
 
     flex: 1; 
 }
@@ -28,7 +28,14 @@
 }
 
 .search input {
+    width: 100%;
     border: none;
     outline: none;
     background: transparent;
+}
+
+.menu img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
 }
