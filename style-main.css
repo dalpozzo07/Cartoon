@@ -39,3 +39,46 @@
     height: 24px;
     cursor: pointer;
 }
+
+.menu img:hover {
+    opacity: 0.7;
+}
+
+@media (min-width: 768px) {
+
+    .navbar {
+        padding: 20px 40px;
+        justify-content: flex-start;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    .search {
+        max-width: 600px;
+        padding: 10px 20px;
+        margin: 0 auto;
+    }
+
+    .search input {
+        font-size: 16px;
+    }
+
+    .search .icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .menu img {
+        width: 32px;
+        height: 32px;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .search input {
+        display: none;
+    }
+}
