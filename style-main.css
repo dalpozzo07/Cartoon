@@ -1,3 +1,28 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 10px;
+    background-color: #ffffff;
+}
+
 .logo img {
     width: 60px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+
+    background: #ddd;
+    border-radius: 20px;
+    padding: 1px 10px;
+
+    flex: 1; 
+}
+
+.search .icon {
+    width: 16px;
+    height: 16px;
 }
