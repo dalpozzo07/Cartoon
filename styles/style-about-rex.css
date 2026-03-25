@@ -17,7 +17,6 @@ header {
     background-position: center;
     height: 200px;
     width: 100%;
-    padding: 150px 100px;
 }
 
 h1 {
@@ -52,6 +51,7 @@ hr {
 
 body {
     background-color: var(--azul-fundo);
+    padding-bottom: 30px;
 }
 
 .img-main {
@@ -59,13 +59,32 @@ body {
     margin-left: 20px;
 }
 
-.about-desktop {
+.about-desktop, .overlay {
     display: none;
+}
+
+.overlay {
+    background: linear-gradient(270deg, 
+        rgba(0, 0, 0, 0) 25%, 
+        rgba(0, 0, 0, 0.6) 50%
+    );
+    height: 100%;
+    width: 100%;
+    padding: 200px 100px;
+}
+
+.overlay h1{
+    font-size: 4rem;
+    text-shadow: 0 0 10px var(--glow), 0 0 20px var(--glow), 0 0 30px var(--glow);
 }
 
 .about-mobile {
     display: block;
     padding: 35px 20px;
+}
+
+.about-mobile h1 {
+    text-shadow: 0 0 10px var(--glow), 0 0 20px var(--glow), 0 0 30px var(--glow);
 }
 
 .abilitys {
@@ -158,14 +177,17 @@ body {
         height: 600px;
     }
 
-    .about-desktop {
+    p{
+        width: 60%;
+    } 
+
+    .about-desktop, .overlay {
         display: block;
     }
 
     .about-mobile {
         display: none;
     }
-
 
     .abilitys {
         display: grid;
@@ -177,10 +199,23 @@ body {
     header {
         height: 700px;
     }
+
 }
 
 @media (min-width: 1024px) {
     header {
         height: 800px;
     }
+
+    .ability-gif{
+        height: 250px;
+    }
+}
+
+@media (max-width: 1110px){
+    .overlay{
+        padding: 150px 60px;
+    }
+
+    
 }
