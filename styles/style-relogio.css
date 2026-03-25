@@ -1,0 +1,8 @@
+.relogio img {
+    position: fixed;
+    top: 60%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    
+    width: 350px; 
+}
