@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root{
     --laranja-titulo: #C2410C;
     --laranja: #FF6A00;
     --glow: #FF5E00;
 
-    --azul-titulo: #1C6EA4;
+    --azul-destaque: #1C6EA4;
     --azul-fundo: #0D1B2A;
 }
 
 header{
-    background-image: url('../assets/rex_wllpp.png');
+    background-image: url('../assets/rex/rex_wllpp.png');
     background-size: cover;
     background-position: center;
     height: 200px;
@@ -37,6 +39,12 @@ p{
     margin-top: 20px;
 }
 
+span{
+    color: var(--laranja);
+    font-weight: bold;
+    font-family: 'Orbitron', cursive;
+}
+
 hr{
     border: 2px solid var(--laranja-titulo);
     margin: 10px 0;
@@ -57,6 +65,65 @@ hr{
     background-color: var(--azul-fundo);
 }
 
-.ability{
+.abilitys{
     margin-top: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.ability-icons-area{
+    display: grid;
+    align-self: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap:30px;
+}
+
+.ability-icons{
+    height: 80px;
+    overflow: hidden;
+}
+
+.ability-icon-molds{
+    background-color: var(--azul-destaque);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 10px;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ability-gif-area{
+    align-self: center;
+}
+
+.ability-gif {
+    display: none;
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: var(--azul-destaque);
+    padding: 10px;
+}
+
+.abilitys:has(.rex-canon:hover) .rex_gun {
+    display: block;
+}
+
+.abilitys:has(.rex-sword:hover) .rex_sword {
+    display: block;
+}
+
+.abilitys:has(.rex-hand:hover) .rex_hand {
+    display: block;
+}
+
+.abilitys:has(.rex-ride:hover) .rex_ride {
+    display: block;
 }
