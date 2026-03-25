@@ -106,3 +106,18 @@ footer {
     width: 350px; 
 }
 
+/* box para o botão */
+
+.botao {
+    position: fixed;
+    top: 28%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+    width: 300px;
+    height: 200px;
+    background-color: #111;
+    border: 2px solid lime;
+    border-radius: 10px;
+}
