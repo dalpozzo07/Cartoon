@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root{
+:root {
     --laranja-titulo: #C2410C;
     --laranja: #FF6A00;
     --glow: #FF5E00;
@@ -11,7 +11,7 @@
     --azul-fundo: #0D1B2A;
 }
 
-header{
+header {
     background-image: url('../assets/rex/rex_wllpp.png');
     background-size: cover;
     background-position: center;
@@ -20,52 +20,55 @@ header{
     padding: 150px 100px;
 }
 
-h1{
+h1 {
     font-family: 'Black Ops One', cursive;
     color: white;
     font-size: 2.5rem;
 }
 
-h2{
+h2 {
     font-family: 'Black Ops One', cursive;
     color: var(--laranja-titulo);
     font-size: 2rem;
 }
 
-p{
+p {
     font-family: 'Poppins', sans-serif;
     color: white;
     font-size: 1rem;
     margin-top: 20px;
 }
 
-span{
+span {
     color: var(--laranja);
     font-weight: bold;
     font-family: 'Orbitron', cursive;
 }
 
-hr{
+hr {
     border: 2px solid var(--laranja-titulo);
     margin: 10px 0;
 }
 
-.img-main{
+body {
+    background-color: var(--azul-fundo);
+}
+
+.img-main {
     height: 200px;
     margin-left: 20px;
 }
 
-.about-desktop{
+.about-desktop {
     display: none;
 }
 
-.about-mobile{
+.about-mobile {
     display: block;
     padding: 35px 20px;
-    background-color: var(--azul-fundo);
 }
 
-.abilitys{
+.abilitys {
     margin-top: 15px;
     text-align: center;
     display: flex;
@@ -74,20 +77,32 @@ hr{
     align-content: center;
 }
 
-.ability-icons-area{
+.main-abilitys {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.ability-icons-area {
     display: grid;
     align-self: center;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap:30px;
+    gap: 30px;
 }
 
-.ability-icons{
+.ability-icon-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.ability-icons {
     height: 80px;
     overflow: hidden;
 }
 
-.ability-icon-molds{
+.ability-icon-molds {
     background-color: var(--azul-destaque);
     border-radius: 10px;
     padding: 10px;
@@ -99,7 +114,7 @@ hr{
     align-items: center;
 }
 
-.ability-gif-area{
+.ability-gif-area {
     align-self: center;
 }
 
@@ -126,4 +141,46 @@ hr{
 
 .abilitys:has(.rex-ride:hover) .rex_ride {
     display: block;
+}
+
+@media (min-width: 490px) {
+    header {
+        height: 400px;
+    }
+}
+
+@media (min-width: 700px) {
+    hr {
+        display: none;
+    }
+
+    header {
+        height: 600px;
+    }
+
+    .about-desktop {
+        display: block;
+    }
+
+    .about-mobile {
+        display: none;
+    }
+
+
+    .abilitys {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 960px) {
+    header {
+        height: 700px;
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        height: 800px;
+    }
 }
