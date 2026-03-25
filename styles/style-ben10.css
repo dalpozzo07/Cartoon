@@ -1,0 +1,184 @@
+
+/* parte do body */
+.backgroundcolor {
+    background-color: #000000;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* particulas no footer */
+footer {
+    position: relative;
+    height: 180px;
+    background: black;
+    overflow: hidden;
+    margin-top: auto;
+}
+
+
+.particles {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+}
+
+
+.particles span {
+    position: absolute;
+    border-radius: 50%;
+    background-color: green;
+    opacity: 0.7;
+    transition: 0.2s;
+}
+
+.particles span:nth-child(3n) {
+    width: 4px;
+    height: 4px;
+}
+
+.particles span:nth-child(2n) {
+    width: 6px;
+    height: 6px;
+}
+
+.particles span:nth-child(5n) {
+    width: 8px;
+    height: 8px;
+}
+
+
+.particles span:nth-child(1)  { left: 3%;  bottom: 10px; }
+.particles span:nth-child(2)  { left: 7%;  bottom: 40px; }
+.particles span:nth-child(3)  { left: 12%; bottom: 20px; }
+.particles span:nth-child(4)  { left: 18%; bottom: 60px; }
+.particles span:nth-child(5)  { left: 22%; bottom: 15px; }
+.particles span:nth-child(6)  { left: 27%; bottom: 50px; }
+.particles span:nth-child(7)  { left: 33%; bottom: 25px; }
+.particles span:nth-child(8)  { left: 38%; bottom: 70px; }
+.particles span:nth-child(9)  { left: 42%; bottom: 30px; }
+.particles span:nth-child(10) { left: 47%; bottom: 45px; }
+
+.particles span:nth-child(11) { left: 52%; bottom: 20px; }
+.particles span:nth-child(12) { left: 56%; bottom: 55px; }
+.particles span:nth-child(13) { left: 61%; bottom: 15px; }
+.particles span:nth-child(14) { left: 66%; bottom: 65px; }
+.particles span:nth-child(15) { left: 70%; bottom: 25px; }
+.particles span:nth-child(16) { left: 74%; bottom: 50px; }
+.particles span:nth-child(17) { left: 78%; bottom: 35px; }
+.particles span:nth-child(18) { left: 82%; bottom: 70px; }
+.particles span:nth-child(19) { left: 86%; bottom: 20px; }
+.particles span:nth-child(20) { left: 90%; bottom: 45px; }
+
+.particles span:nth-child(21) { left: 5%;  bottom: 20px; }
+.particles span:nth-child(22) { left: 15%; bottom: 40px; }
+.particles span:nth-child(23) { left: 25%; bottom: 30px; }
+.particles span:nth-child(24) { left: 35%; bottom: 50px; }
+.particles span:nth-child(25) { left: 45%; bottom: 35px; }
+.particles span:nth-child(26) { left: 55%; bottom: 60px; }
+.particles span:nth-child(27) { left: 65%; bottom: 25px; }
+.particles span:nth-child(28) { left: 75%; bottom: 55px; }
+.particles span:nth-child(29) { left: 85%; bottom: 45px; }
+.particles span:nth-child(30) { left: 95%; bottom: 30px; }
+
+
+.particles span:hover {
+    background-color: lime;
+    transform: scale(1.8);
+    opacity: 1;
+}
+
+/* imagem do omnitrix */
+.relogio img {
+    position: fixed;
+    top: 60%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    
+    width: 350px; 
+}
+
+/* box para o botão */
+.box {
+    position: fixed;
+    top: 27%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    z-index: 10; 
+    padding: 30px 60px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+
+    border: 2px solid lime;
+
+    text-align: center;
+
+    box-shadow: 
+        0 0 10px lime,
+        0 0 20px lime,
+        0 0 40px lime;
+
+    backdrop-filter: blur(5px);
+
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+
+.box h1 {
+    color: #7CFF00;
+    font-size: 32px;
+    text-shadow: 
+        0 0 5px lime,
+        0 0 10px lime,
+        0 0 20px lime;
+}
+
+.box:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+    box-shadow: 
+        0 0 20px lime,
+        0 0 40px lime,
+        0 0 80px lime;
+}
+
+   /* RESPONSIVIDADE */
+
+@media (max-width: 400px) {
+
+    .relogio img {
+        width: 220px;
+        top: 65%;
+    }
+
+    .box {
+        padding: 15px 20px;
+        width: 80%;
+        top: 30%;
+    }
+
+    .box h1 {
+        font-size: 18px;
+    }
+
+
+    footer {
+        height: 120px;
+    }
+
+    .particles {
+        height: 60px;
+    }
+
+    .particles span {
+        transform: scale(0.8);
+    }
+
+}

@@ -26,6 +26,7 @@
     flex-direction: column;
     width: 250px;
     transition: 0.3s;
+    text-decoration: none;
 }
 
 .card-top {
