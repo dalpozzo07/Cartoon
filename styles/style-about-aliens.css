@@ -8,7 +8,7 @@
     --glow: #4bfd04;
 
     --branco-destaque: #fbfdff;
-    --branco-fundo: #c9cdd1;
+    --branco-fundo: #070707;
 }
 
 
@@ -61,7 +61,7 @@ body {
 }
 
 .about-desktop, .overlay {
-    display: block;
+    display: none;
 }
 
 .overlay {
