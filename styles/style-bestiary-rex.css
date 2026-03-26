@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --laranja-titulo: #C2410C;
+
+    --azul-fundo: #0D1B2A;
+}
+
+body {
+    background-color: var(--azul-fundo);
+    padding-bottom: 30px;
+}
+
+.page-title {
+    font-family: 'Orbitron', cursive;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+    margin: 30px 0 0;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ffffff22;
+}
+
+.cards-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 30px 50px;
+    gap: 50px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    max-width: 300px;
+}
+
+.card-title {
+    font-family: 'Orbitron', cursive;
+    color: var(--laranja-titulo);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.img-desc {
+    --cor-borda: ;
+
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--cor-borda);
+    box-shadow: 0 0 20px var(--cor-borda);
+    padding: 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+    animation: glow-pulse 2s ease-in-out infinite;
+}
+
+.img {
+    height: 300px;
+    width: 308px;
+    align-self: center;
+}
+
+.description {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.img-desc:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.badge {
+    align-self: flex-start;
+    font-family: 'Orbitron', cursive;
+    font-size: 0.6rem;
+    letter-spacing: 2px;
+    padding: 3px 10px;
+    border-radius: 4px;
+    border: 1px solid var(--cor-borda);
+    color: var(--cor-borda);
+    margin-bottom: 10px;
+}
+
+@keyframes glow-pulse {
+    0% {
+        box-shadow: 0 0 8px var(--cor-borda);
+    }
+
+    50% {
+        box-shadow: 0 0 25px var(--cor-borda), 0 0 50px var(--cor-borda);
+    }
+
+    100% {
+        box-shadow: 0 0 8px var(--cor-borda);
+    }
+}
+
+@media (min-width: 756px) {
+    .cards-area {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
+}
+
+@media (min-width: 1200px) {
+    .cards-area {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .img {
+        height: 200px;
+        width: 200px;
+    }
+}
