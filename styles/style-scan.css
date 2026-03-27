@@ -25,7 +25,7 @@ body {
     position: relative;
     gap: 20px;
     margin: 50px 0;
-    animation: shake 0.3s ease-in-out 5.5s forwards;
+    animation: shake 0.3s ease-in-out 7.5s forwards;
 }
 
 .menace-found,
@@ -45,15 +45,15 @@ body {
     color: var(--scanning);
     border: 1px solid var(--scanning);
     opacity: 1;
-    animation: fade-out 0s linear 3.5s forwards;
+    animation: fade-out 0s linear 5.5s forwards;
 }
 
 .menace-found{
     color: var(--ameaca);
     border: 1px solid var(--ameaca);
     opacity: 0;
-    animation: fade-in 0s linear 3.6s forwards,
-        fade-out 0s linear 5s forwards
+    animation: fade-in 0s linear 5.6s forwards,
+        fade-out 0s linear 7.5s forwards
     ;
 }
 
@@ -61,7 +61,8 @@ body {
     color: var(--cor-principal);
     border: 1px solid var(--cor-principal);
     opacity: 0;
-    animation: fade-in 0s linear 6s forwards
+    animation: fade-in 0s linear 7.5s forwards;
+    font-size: 1.5rem;
 }
 
 .window {
@@ -99,7 +100,7 @@ body {
     width: 250px;
     height: 250px;
     position: absolute;
-    animation: fade-out 1.5s linear 4s forwards;
+    animation: fade-out 1.5s linear 6s forwards;
 }
 
 
@@ -108,13 +109,13 @@ body {
     height: 250px;
     position: absolute;
     opacity: 0;
-    animation: fade-in 0s linear 5.5s forwards;
+    animation: fade-in 0s linear 7.5s forwards;
 }
 
 .scan-line {
     width: 100%;
     border: 1px solid var(--scanning);
-    animation: scan 4s linear forwards;
+    animation: scan 7s linear forwards;
     position: absolute;
     left: 0;
     z-index: 2;
@@ -126,7 +127,7 @@ body {
         opacity: 0;
     }
 
-    30% {
+    20% {
         top: 0%;
         opacity: 1;
     }
