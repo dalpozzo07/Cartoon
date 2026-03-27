@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --azul-fundo: #0D1B2A;
+
+    --scanning: #00E5FF;
+
+    --ameaca: red;
+
+    --cor-principal: ;
+}
+
+body {
+    background-color: var(--azul-fundo);
+    overflow-x: hidden;
+
+}
+
+.menace {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 20px;
+    margin: 50px 0;
+    animation: shake 0.3s ease-in-out 5.5s forwards;
+}
+
+.menace-found,
+.menace-title,
+.menace-scanning
+{
+    font-family: 'Orbitron', cursive;
+    font-size: 1rem;
+    padding: 5px;
+    text-align: center;
+    position: absolute;
+    letter-spacing: 4px;
+    top: -50px;
+}
+
+.menace-scanning{
+    color: var(--scanning);
+    border: 1px solid var(--scanning);
+    opacity: 1;
+    animation: fade-out 0s linear 3.5s forwards;
+}
+
+.menace-found{
+    color: var(--ameaca);
+    border: 1px solid var(--ameaca);
+    opacity: 0;
+    animation: fade-in 0s linear 3.6s forwards,
+        fade-out 0s linear 5s forwards
+    ;
+}
+
+.menace-title{
+    color: var(--cor-principal);
+    border: 1px solid var(--cor-principal);
+    opacity: 0;
+    animation: fade-in 0s linear 6s forwards
+}
+
+.window {
+    
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 270px;
+}
+
+.aside {
+    background-color: var(--cor-principal);
+    width: 10px;
+
+    clip-path: polygon(10px 0,
+            100% 0,
+            100% calc(100% - 10px),
+            calc(100% - 10px) 100%,
+            0 10px);
+}
+
+.card {
+    border: 2px solid var(--cor-principal);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+    width: 260px;
+    height: 260px;
+}
+
+.img {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    animation: fade-out 1.5s linear 4s forwards;
+}
+
+
+.img2 {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    opacity: 0;
+    animation: fade-in 0s linear 5.5s forwards;
+}
+
+.scan-line {
+    width: 100%;
+    border: 1px solid var(--scanning);
+    animation: scan 4s linear forwards;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+}
+
+@keyframes scan {
+    0% {
+        top: 0%;
+        opacity: 0;
+    }
+
+    30% {
+        top: 0%;
+        opacity: 1;
+    }
+
+    70% {
+        top: 100%;
+        opacity: 1;
+    }
+
+    100% {
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-8px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(8px);    
+    }
+}
+
+@keyframes fade-out {
+    to { opacity: 0; }
+}
+
+@keyframes fade-in {
+    to { opacity: 1; }
+}

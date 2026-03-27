@@ -40,6 +40,7 @@ body {
     align-self: center;
     justify-self: center;
     max-width: 300px;
+    text-decoration: none;
 }
 
 .card-title {
