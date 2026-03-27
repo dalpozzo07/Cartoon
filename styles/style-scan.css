@@ -58,7 +58,7 @@ body {
 }
 
 .menace-title{
-    color: var(--cor-principal);
+    color: white;
     border: 1px solid var(--cor-principal);
     opacity: 0;
     animation: fade-in 0s linear 7.5s forwards;
@@ -66,14 +66,13 @@ body {
 }
 
 .window {
-    
     display: flex;
     flex-direction: row;
     gap: 10px;
     height: 270px;
 }
 
-.aside {
+.aside-menace {
     background-color: var(--cor-principal);
     width: 10px;
 
@@ -84,7 +83,7 @@ body {
             0 10px);
 }
 
-.card {
+.card-menace     {
     border: 2px solid var(--cor-principal);
     border-radius: 5px;
     display: flex;

@@ -8,10 +8,14 @@
     <link rel="stylesheet" href="../../styles/style-main.css">
     <link rel="stylesheet" href="../../styles/style-navbar.css">
     <link rel="stylesheet" href="../../styles/style-scan.css">
+    <link rel="stylesheet" href="../../styles/style-infos-scan.css">
 </head>
 
 <body style="--cor-principal: #7844a6;">
-    <nav class="navbar" style="background-color: #0D1B2A;">
+    <nav class="navbar" style="background-color: #0D1B2A; margin-bottom: 100px;">
+        <a class="back" href="../../pages/bestiary-rex.html">
+            <img src="../../assets/back.png" alt="logo">
+        </a>
         <a class="logo" href="../main.html">
             <img src="../../assets/logo.png" alt="logo">
         </a>
@@ -22,17 +26,54 @@
             <h1 class="menace-found">AMEAÇA ENCONTRADA!</h1>
             <h1 class="menace-title">BIOWULF</h1>
             <div class="window">
-                <aside class="aside">
+                <aside class="aside-menace">
                 </aside>
-                <div class="card">
-                    <hr class="scan-line"> 
+                <div class="card-menace">
+                    <hr class="scan-line">
                     <img src="../../assets/rex/bestiary/biowulf_icon.png" alt="Biowulf" class="img">
                     <img src="../../assets/rex/bestiary/biowulf_attack.png" alt="Biowulf Attack" class="img2">
                 </div>
             </div>
         </section>
-    </main>
 
+        <section class="infos">
+            <div class="window-attr">
+                <aside class="aside-infos">
+                </aside>
+                <div class="card">
+                    <span class="attr-title">ATRIBUTOS</span>
+                    <div class="attr-row">
+                        <span class="attr-name">FORÇA</span>
+                        <div class="attr-bar-bg">
+                            <div class="attr-bar-fill" style="--fill: 90%"></div>
+                        </div>
+                        <span class="attr-val">90</span>
+                    </div>
+                    <div class="attr-row">
+                        <span class="attr-name">HAB.</span>
+                        <div class="attr-bar-bg">
+                            <div class="attr-bar-fill" style="--fill: 90%"></div>
+                        </div>
+                        <span class="attr-val">90</span>
+                    </div>
+                    <div class="attr-row">
+                        <span class="attr-name">VELOC.</span>
+                        <div class="attr-bar-bg">
+                            <div class="attr-bar-fill" style="--fill: 70%"></div>
+                        </div>
+                        <span class="attr-val">70</span>
+                    </div>
+                    <div class="attr-row">
+                        <span class="attr-name">RESIST.</span>
+                        <div class="attr-bar-bg">
+                            <div class="attr-bar-fill" style="--fill: 75%"></div>
+                        </div>
+                        <span class="attr-val">75</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>

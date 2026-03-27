@@ -1,0 +1,91 @@
+.infos{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 50px;
+}
+
+.window-attr{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: stretch;
+}
+
+.aside-infos{
+    background-color: var(--cor-principal);
+    width: 10px;
+
+    clip-path: polygon(10px 0,
+            100% 0,
+            100% calc(100% - 10px),
+            calc(100% - 10px) 100%,
+            0 10px);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border: 2px solid var(--cor-principal);
+    padding: 10px;
+    width: 300px;      
+}
+
+.attr-title{
+    color: white;
+    font-family: 'Orbitron', cursive;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.attr-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.attr-name {
+    font-family: 'Orbitron', cursive;
+    font-size: 0.6rem;
+    color: #64748b;
+    width: 55px;
+    flex-shrink: 0;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.attr-bar-bg {
+    flex: 1;
+    height: 5px;
+    background: #1e293b;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.attr-bar-fill {
+    height: 100%;
+    border-radius: 3px;
+    background: var(--cor-principal);
+    width: 0%;
+    animation: fill-bar 2s linear forwards;
+}
+
+.attr-val {
+    font-family: 'Orbitron', cursive;
+    font-size: 0.6rem;
+    color: #475569;
+    width: 22px;
+    text-align: right;
+    font-weight: bold;
+}
+
+@keyframes fill-bar {
+    from { 
+        width: 0%; 
+    }
+    to   { 
+        width: var(--fill); 
+    }
+}
+

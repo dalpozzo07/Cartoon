@@ -10,6 +10,11 @@
     width: 60px;
 }
 
+.back{
+    width: 40px;
+    margin-right: 20px;
+}
+
 .search {
     display: flex;
     align-items: center;
