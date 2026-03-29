@@ -105,13 +105,14 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
-
+    
     max-width: 900px;
     margin: 40px auto;
     padding: 20px;
 
     background-color: #f5f5f5;
     border-radius: 20px;
+    
 }
 
 .card {
