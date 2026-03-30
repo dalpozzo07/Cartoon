@@ -1,5 +1,4 @@
 
-/* parte do body */
 .backgroundcolor {
     background-color: #000000;
 }
@@ -14,7 +13,6 @@ body {
     flex-direction: column;
 }
 
-/* particulas no footer */
 footer {
     position: relative;
     height: 180px;
@@ -96,7 +94,6 @@ footer {
     opacity: 1;
 }
 
-/* imagem do omnitrix */
 .relogio img {
     position: fixed;
     top: 60%;
@@ -106,7 +103,6 @@ footer {
     width: 350px; 
 }
 
-/* box para o botão */
 .box {
     position: fixed;
     top: 27%;
@@ -149,7 +145,6 @@ footer {
         0 0 80px lime;
 }
 
-   /* RESPONSIVIDADE */
 
 @media (max-width: 400px) {
 
