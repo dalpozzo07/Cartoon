@@ -39,6 +39,7 @@ body {
     position: absolute;
     letter-spacing: 4px;
     top: -50px;
+    border-radius: 5px;
 }
 
 .menace-scanning{
