@@ -17,7 +17,7 @@
 
 
 header {
-    background-image: url('../assets/ben/banner10.png');
+    background-image: url('../../assets/ben/banner10.png');
     background-size: cover;
     background-position: center;
     height: 200px;

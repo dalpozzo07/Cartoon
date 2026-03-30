@@ -12,7 +12,7 @@
 }
 
 header {
-    background-image: url('../assets/rex/rex_wllpp.png');
+    background-image: url('../../assets/rex/rex_wllpp.png');
     background-size: cover;
     background-position: center;
     height: 200px;
